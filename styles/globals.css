@@ -2,29 +2,167 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
+.oracle-gradient {
+    background: radial-gradient(at top right, rgba(130,71,224, 1) 0%, rgba(130,71,224,0) 50%);
+    z-index: -1;
+}
+
+.oracle-gradient-2 {
+    background: radial-gradient(at top left, rgba(71, 145, 224, 1) 0%, rgba(71, 145, 224,0) 50%);
+    z-index: -1;
+}
+
+.nav-border {
+    border: 2px solid rgba(249, 250, 251, .8);
+}
+.dark .nav-border {
+    border: 2px solid rgba(249, 250, 251, .2);
+}
+
+.profile-button {
+    cursor: pointer;
+    user-select: none;
+}
+
+.profile-button:hover,
+.profile-button:active, 
+.profile-button.active {
+    box-sizing: border-box;
+    background: rgba(158, 115, 228, 0.08);
+    border-radius: 12px;
+}
+
+.green {
+    background-color: #49de80;
+}
+
+.red {
+    background-color: #f87171;
+}
+
+.profile-button::after {
+    content: " ";
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    top: 45%;
+    right: 1rem;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.2);
+}
+
+.dark .profile-button::after {
+    border-top: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-button.active::after {
+    content: " ";
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    top: 40%;
+    right: 1rem;
+    border-top: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.2);
+}
+
+.dark .profile-button.active::after {
+    border-bottom: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+
+@media (min-width: 768px) {
+    .profile-button::after {
+        right: 1.5rem;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid rgba(0, 0, 0, 0.2);
+    }
+    .dark .profile-button::after {
+        border-top: 8px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .profile-button.active::after {
+        right: 1.5rem;
+        border-top: 0px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid rgba(0, 0, 0, 0.2);
+    }
+    .dark .profile-button.active::after {
+        border-bottom: 8px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+.dark hr {
+    border-color: rgba(255,255,255,0.08);
+}
+
+.nav-dropdown { 
+    position: absolute;
+    right: 2.5px;
+    z-index: 999;
+    min-width: 320px;
+    max-width: 420px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.new-request-button {
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Audiowide', cursive;
+}
+
+.new-request-header {
+    font-family: 'Audiowide', cursive;
+}
+
+.request-box {
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #8CB7E6;
+    border-radius: 16px;
+}
+
+.dark .request-box {
+    border: 1px solid #8cb8e63f;
+}
+
+hr {
+    border-color: rgba(0,0,0,0.08);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.request-info::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.request-info {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
