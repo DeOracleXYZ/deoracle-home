@@ -74,7 +74,7 @@ const Home: NextPage = () => {
           />
         </div>
         <div className="flex items-stretch">
-          <h1 className="text-3xl text-slate-100 self-center ">Decentralised Oracle Network for Subjective Data Feeds</h1>
+          <h1 className="text-4xl dark:text-slate-400 self-center leading-normal">Decentralised Oracle Network for Subjective Data Feeds</h1>
         </div>
             
       </main>

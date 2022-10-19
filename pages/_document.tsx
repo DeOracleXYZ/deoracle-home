@@ -16,6 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/favicon.svg" />
+          <title>deOracle.xyz - Decentralised Oracle Network for Subjective Data Feeds</title>
         </Head>
         <body className="dark:bg-slate-900">
           <div className="fixed w-1/2 h-1/2 top-0 right-0 oracle-gradient"></div>
