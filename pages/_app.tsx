@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="container mx-auto px-4 mt-4 ">
+    <div className="container mx-auto px-4 mt-4">
       <Component {...pageProps} />
     </div>
   )
