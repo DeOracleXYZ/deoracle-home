@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import type { NextPage } from "next";
 import Spline from "@splinetool/react-spline";
+import Head from "next/head";
 
 const Home: NextPage = () => {
 
@@ -36,6 +37,10 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>deOracle.xyz - Decentralised Oracle Network for Subjective Data Feeds</title>
+      </Head>
+
       <header
         className="sticky top-12 py-1 px-1 grid grid-flow-col bg-neutral-100 rounded-xl shadow-xl backdrop-blur-md bg-white/30 dark:bg-white/10 nav-border grid-cols-3 gap-4"
         style={{ borderRadius: 16 + "px", zIndex: 999 }}
