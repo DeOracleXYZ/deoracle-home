@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         </div>
         <div className="mr-5 grid align-middle col-span-2 justify-self-end content-center">
           <div>
-            <ul className="nav-menu text-lg align-middle px-6 py-3 inline-block">
+            {/* <ul className="nav-menu text-lg align-middle px-6 py-3 inline-block">
               <li>
                 <a href="#">Home</a>
               </li>
@@ -67,12 +67,12 @@ const Home: NextPage = () => {
               <li>
                 <a href="#community">Community</a>
               </li>
-            </ul>
+            </ul> */}
             <a
               className="align-middle inline-block px-5 py-3 py-1 text-lg text-purple-600 font-semibold rounded-full border-2 border-purple-400 bg-gradient-to-r from-purple-100 from-purple-300 hover:bg-gradient-to-l hover:text-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 dark:text-black/80"
               href="https://app.deoracle.xyz"
             >
-              Testnet App
+              App
             </a>
           </div>
         </div>
@@ -87,12 +87,13 @@ const Home: NextPage = () => {
         </div>
         <div className="flex items-stretch">
           <h1 className="text-5xl dark:text-slate-400 self-center leading-normal">
-            Decentralised Oracle Network for Subjective Data Feeds
+            Decentralised Oracle Network for Subjective Data Feeds<br />
+            <span className="text-2xl dark:text-slate-400 self-center leading-normal"><i>Coming Soon...</i></span>
           </h1>
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-8 mb-40">
+      {/* <div className="grid grid-cols-4 gap-8 mb-40">
         <div className="col-span-4 text-center mb-20">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="features">
             Features
@@ -264,7 +265,7 @@ const Home: NextPage = () => {
             Join Telegram Group
           </a>
         </div>
-      </div>
+      </div> */}
 
       <footer className="container text-center py-10 px-10 mt-10">
         <button
