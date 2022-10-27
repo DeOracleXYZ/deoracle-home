@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       document.documentElement.classList.remove("dark");
       setDarkMode(false);
     }
-  }, []);
+  }, [darkMode]);
 
   const toggleTheme = () => {
     if (darkMode) {
