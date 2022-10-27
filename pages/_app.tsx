@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div className="container mx-auto px-4 mt-4">
       <Component {...pageProps} />
     </div>
-  )
+  );
 }
 
 export default MyApp;
