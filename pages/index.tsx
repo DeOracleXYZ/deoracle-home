@@ -100,7 +100,7 @@ const Home: NextPage = () => {
         </div>
       </header>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 my-40">
         <div className="w-full h-96">
           <Spline
             scene="https://prod.spline.design/LBWVwdzF5oRbGik2/scene.splinecode"
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-5 gap-8 mb-20 content-center">
+      <div className="grid grid-cols-5 gap-8 mb-20 content-center mt-33">
         <div className="col-span-5 text-center ">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-34 " id="features">
             What is a Subjective Oracle?
@@ -183,7 +183,7 @@ const Home: NextPage = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-8 text-center">
-        <div className="col-span-2 text-center mb-20">
+        <div className="col-span-2 text-center mb-10">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="reputation">
             Reputation System
           </h1>
@@ -219,7 +219,7 @@ const Home: NextPage = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-8 text-center">
-        <div className="col-span-1 text-center mb-20">
+        <div className="col-span-1 text-center mb-10">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="user-flow">
             User Flow
           </h1>
@@ -332,7 +332,7 @@ const Home: NextPage = () => {
 
       <div className="grid grid-cols-4 gap-8 ">
         <div className="col-span-4 text-center">
-          <h1 className="text-5xl font-bold dark:text-slate-400 pt-34" id="community">
+          <h1 className="text-5xl font-bold dark:text-slate-400 pt-34 mt-40" id="community">
             Join DeOracle Community
           </h1>
         </div>
@@ -454,7 +454,16 @@ const Home: NextPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Testnet App
+            Polygon Testnet App
+          </a>
+          &nbsp;.&nbsp;&nbsp;
+          <a
+            href="https://ethonline.deoracle.xyz"
+            className="text-slate-400 underline hover:no-underline hover:text-slate-500"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Cross-Chain Testnet App
           </a>
         </p>
         <br />
