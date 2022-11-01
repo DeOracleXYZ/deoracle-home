@@ -116,7 +116,7 @@ const Home: NextPage = () => {
 
       <div className="grid grid-cols-5 gap-8 mb-20 content-center">
         <div className="col-span-5 text-center ">
-          <h1 className="text-5xl font-bold dark:text-slate-400 pt-44 " id="features">
+          <h1 className="text-5xl font-bold dark:text-slate-400 pt-34 " id="features">
             What is a Subjective Oracle?
           </h1>
         </div>
