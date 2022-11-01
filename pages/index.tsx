@@ -332,7 +332,7 @@ const Home: NextPage = () => {
 
       <div className="grid grid-cols-4 gap-8 ">
         <div className="col-span-4 text-center">
-          <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="community">
+          <h1 className="text-5xl font-bold dark:text-slate-400 pt-34" id="community">
             Join DeOracle Community
           </h1>
         </div>
