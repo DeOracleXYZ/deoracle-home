@@ -45,13 +45,13 @@ const Home: NextPage = () => {
         <div className="justify-self-start h-24 pt-5">
           <Link href="/" passHref>
             <a>
-            <Image
-              src={"/logo" + `${darkMode ? "-dark" : ""}` + ".svg"}
-              alt="DeOracle.xyz Logo"
-              width={342}
-              height={80}
-              style={{ textAlign: "left" }}
-            />
+              <Image
+                src={"/logo" + `${darkMode ? "-dark" : ""}` + ".svg"}
+                alt="DeOracle.xyz Logo"
+                width={342}
+                height={80}
+                style={{ textAlign: "left" }}
+              />
             </a>
           </Link>
         </div>
@@ -71,7 +71,23 @@ const Home: NextPage = () => {
                 <a href="#community">Community</a>
               </li>
               <li>
-                <a href="https://docs.deoracle.xyz" target="_blank" rel="noreferrer" >Docs <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="inline w-3 h-3 mb-3"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg></a>
+                <a href="https://docs.deoracle.xyz" target="_blank" rel="noreferrer">
+                  Docs{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="inline w-3 h-3 mb-3"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
               </li>
             </ul>
             <a
@@ -84,7 +100,7 @@ const Home: NextPage = () => {
         </div>
       </header>
 
-      <div className="grid grid-cols-2 gap-4 mt-40 mb-40">
+      <div className="grid grid-cols-2 gap-4">
         <div className="w-full h-96">
           <Spline
             scene="https://prod.spline.design/LBWVwdzF5oRbGik2/scene.splinecode"
@@ -98,44 +114,46 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-
-      <div className="grid grid-cols-5 gap-8 mb-40 content-center">
-        <div className="col-span-5 text-center">
-          <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="features">
+      <div className="grid grid-cols-5 gap-8 mb-20 content-center">
+        <div className="col-span-5 text-center ">
+          <h1 className="text-5xl font-bold dark:text-slate-400 pt-44 " id="features">
             What is a Subjective Oracle?
           </h1>
         </div>
 
-        <div className="col-1 text-center">
-        </div>
+        <div className="col-1 text-center"></div>
 
         <div className="col-span-3 text-center">
-          <p className="text-2xl dark:text-slate-400 mt-5 mb-20">A subjective oracle allows access to dynamic, permissionless and reliable data on-chain.</p>
+          <p className="text-2xl dark:text-slate-400 mt-5 mb-20">
+            A subjective oracle allows access to dynamic, permissionless and reliable data on-chain.
+          </p>
         </div>
-
       </div>
 
-      <div className="grid grid-cols-3 gap-8 mb-40 text-center">
-
+      <div className="grid grid-cols-3 gap-8 text-center">
         <div className="col-1">
           <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">Access Data Feeds</h2>
-          <p className="text-lg dark:text-slate-400 px-10">View on DeOracle.xyz or subscribe using the DeOracle Solidity API.</p>
+          <p className="text-lg dark:text-slate-400 px-10">
+            View on DeOracle.xyz or subscribe using the DeOracle Solidity API.
+          </p>
         </div>
 
         <div className="col-1">
           <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">Earn as an Oracle</h2>
-          <p className="text-lg dark:text-slate-400 px-10">Oracles update and verify the data feed for subscription revenue share.</p>
+          <p className="text-lg dark:text-slate-400 px-10">
+            Oracles update and verify the data feed for subscription revenue share.
+          </p>
         </div>
 
         <div className="col-1">
           <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">Request New Data</h2>
-          <p className="text-lg dark:text-slate-400 px-10">Create a new data request or feed request on DeOracle.</p>
+          <p className="text-lg dark:text-slate-400 px-10">
+            Create a new data request or feed request on DeOracle.
+          </p>
         </div>
-
       </div>
 
-
-      <div className="grid grid-cols-3 gap-8 mb-40 text-center">
+      <div className="grid grid-cols-3 gap-8 text-center">
         <div className="col-span-3 text-center mb-20">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="why-deoracle">
             Why DeOracle?
@@ -144,24 +162,27 @@ const Home: NextPage = () => {
 
         <div className="col-1">
           <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">Wide Scope Data</h2>
-          <p className="text-lg dark:text-slate-400 px-2">Access wide scope data on-chain that is not available on traditional oracles.</p>
+          <p className="text-lg dark:text-slate-400 px-2">
+            Access wide scope data on-chain that is not available on traditional oracles.
+          </p>
         </div>
 
         <div className="col-1">
           <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">Subjective Queries</h2>
-          <p className="text-lg dark:text-slate-400 px-2">Flexible on-chain queries allow for open ended and nondeterministic data feeds.</p>
+          <p className="text-lg dark:text-slate-400 px-2">
+            Flexible on-chain queries allow for open ended and nondeterministic data feeds.
+          </p>
         </div>
 
         <div className="col-1">
           <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">DAO-Owned Data Feeds</h2>
-          <p className="text-lg dark:text-slate-400 px-2">Data feeds are owned and managed by DeOracle DAO.</p>
+          <p className="text-lg dark:text-slate-400 px-2">
+            Data feeds are owned and managed by DeOracle DAO.
+          </p>
         </div>
-
       </div>
 
-
-
-      <div className="grid grid-cols-2 gap-8 mb-40 text-center">
+      <div className="grid grid-cols-2 gap-8 text-center">
         <div className="col-span-2 text-center mb-20">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="reputation">
             Reputation System
@@ -169,43 +190,35 @@ const Home: NextPage = () => {
         </div>
 
         <div className="col-1 px-10 py-10">
-          <Image
-              src="/verify.png"
-              alt="Verify"
-              width={631}
-              height={434}
-            />
+          <Image src="/verify.png" alt="Verify" width={631} height={434} />
         </div>
 
         <div className="col-1 flex items-center justify-center">
           <div>
             <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">Get Verified</h2>
-            <p className="text-lg dark:text-slate-400 px-10">Access wide scope data on-chain that is not available on traditional oracles.</p>
+            <p className="text-lg dark:text-slate-400 px-10">
+              Access wide scope data on-chain that is not available on traditional oracles.
+            </p>
           </div>
         </div>
 
         <div className="col-1 flex items-center justify-center">
           <div>
-            <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">Earn Reputation & Bounties</h2>
-            <p className="text-lg dark:text-slate-400 px-10">Access wide scope data on-chain that is not available on traditional oracles.</p>
+            <h2 className="text-3xl dark:text-slate-400 font-bold mb-3">
+              Earn Reputation & Bounties
+            </h2>
+            <p className="text-lg dark:text-slate-400 px-10">
+              Access wide scope data on-chain that is not available on traditional oracles.
+            </p>
           </div>
         </div>
 
         <div className="col-1 px-10 py-10">
-          <Image
-              src="/earn.png"
-              alt="Earn"
-              width={631}
-              height={434}
-            />
+          <Image src="/earn.png" alt="Earn" width={631} height={434} />
         </div>
-
       </div>
 
-
-
-
-      <div className="grid grid-cols-1 gap-8 mb-40 text-center">
+      <div className="grid grid-cols-1 gap-8 text-center">
         <div className="col-span-1 text-center mb-20">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="user-flow">
             User Flow
@@ -213,104 +226,123 @@ const Home: NextPage = () => {
         </div>
 
         <div className="col-1 relative">
-          
-        <Image
-              src="/deoracle-user-flow.png"
-              alt="DeOracle User Flow"
-              width="1280"
-              height="606"
-              style={{ }}
-            />
+          <Image
+            src="/deoracle-user-flow.png"
+            alt="DeOracle User Flow"
+            width="1280"
+            height="606"
+            style={{}}
+          />
         </div>
-
       </div>
 
-
-
-      <div className="grid grid-cols-2 gap-8 mb-40 text-center">
-        <div className="col-span-2 text-center mb-20">
+      <div className="grid grid-cols-2 gap-8 text-center">
+        <div className="col-span-2 text-center mb-10">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="team">
             Team
           </h1>
         </div>
 
-       
-        <div className="col-1 mb-40">
-          <Image
-              src="/team/pixel-mark.png"
-              alt="Mark"
-              width={256}
-              height={256}
-              style={{ }}
-            />
+        <div className="col-1 ">
+          <Image src="/team/pixel-mark.png" alt="Mark" width={256} height={256} style={{}} />
           <h2 className="text-3xl dark:text-slate-400 font-bold my-3">Mark</h2>
           <p className="text-lg dark:text-slate-400 px-2 pb-3">Co-Founder & CTO</p>
           <p>
-            <a className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500"
+            <a
+              className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500"
               href="https://linkedin.com/in/markeljan"
               target="_blank"
-              rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="inline" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg>
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="inline"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
             </a>
             &nbsp; &nbsp;
-            <a className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500" 
+            <a
+              className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500"
               href="https://twitter.com/0xMarkeljan"
               target="_blank"
-              rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="inline" viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-            </svg>
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="inline"
+                viewBox="0 0 16 16"
+              >
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg>
             </a>
           </p>
         </div>
 
         <div className="col-1 mb-20">
-          <Image
-              src="/team/pixel-alex.png"
-              alt="Alex"
-              width={256}
-              height={256}
-              style={{ }}
-            />
+          <Image src="/team/pixel-alex.png" alt="Alex" width={256} height={256} style={{}} />
           <h2 className="text-3xl dark:text-slate-400 font-bold my-3">Alex</h2>
           <p className="text-lg dark:text-slate-400 px-2 pb-3">Co-Founder & CEO</p>
           <p>
-            <a className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500"
+            <a
+              className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500"
               href="https://linkedin.com/in/alexandrubiet"
               target="_blank"
-              rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="inline" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg>
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="inline"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
             </a>
             &nbsp; &nbsp;
-            <a className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500" 
+            <a
+              className="text-slate-600 underline hover:cursor-pointer hover:no-underline hover:text-slate-500"
               href="https://twitter.com/alex_biet"
               target="_blank"
-              rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="inline" viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-            </svg>
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="inline"
+                viewBox="0 0 16 16"
+              >
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg>
             </a>
           </p>
         </div>
-
       </div>
 
-
-      <div className="grid grid-cols-4 gap-8 mb-40">
+      <div className="grid grid-cols-4 gap-8 ">
         <div className="col-span-4 text-center">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44" id="community">
             Join DeOracle Community
           </h1>
         </div>
 
-        <div className="col-1">
-        </div>
+        <div className="col-1"></div>
         <div className="col-span-2 text-center">
-          <p className="text-2xl dark:text-slate-400 mt-5 mb-5">Join our community of new oracles, developers, early users, investors and community supporters.</p>
+          <p className="text-2xl dark:text-slate-400 mt-5 mb-5">
+            Join our community of new oracles, developers, early users, investors and community
+            supporters.
+          </p>
         </div>
 
         <div className="col-span-4 text-center">
@@ -325,9 +357,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-
-
-      <div className="grid grid-cols-5 gap-8 mb-40">
+      <div className="grid grid-cols-5 gap-8 ">
         <div className="col-span-5 text-center">
           <h1 className="text-5xl font-bold dark:text-slate-400 pt-44 mb-20" id="supporters">
             Supporters
@@ -335,53 +365,25 @@ const Home: NextPage = () => {
         </div>
 
         <div className="col-1 bg-white rounded-xl px-6 py-3 flex items-center">
-          <Image
-              src="/sovereign-labs.svg"
-              alt="SovereignLabs.com"
-              width={256}
-              height={100}
-            />
+          <Image src="/sovereign-labs.svg" alt="SovereignLabs.com" width={256} height={100} />
         </div>
 
         <div className="col-1 bg-white rounded-xl px-6 py-3 flex items-center justify-center">
-          <Image
-              src="/encode.png"
-              alt="Encode.club"
-              className="mx-auto"
-              width={140}
-              height={67}
-            />
+          <Image src="/encode.png" alt="Encode.club" className="mx-auto" width={140} height={67} />
         </div>
 
         <div className="col-1 bg-white rounded-xl px-6 py-3 flex items-center">
-          <Image
-              src="/ethonline.svg"
-              alt="ETHGlobal.com"
-              width={256}
-              height={100}
-            />
+          <Image src="/ethonline.svg" alt="ETHGlobal.com" width={256} height={100} />
         </div>
 
         <div className="col-1 bg-white rounded-xl px-6 py-3 flex items-center">
-          <Image
-              src="/hyperlane.svg"
-              alt="Hyperlane.xyz"
-              width={256}
-              height={100}
-            />
+          <Image src="/hyperlane.svg" alt="Hyperlane.xyz" width={256} height={100} />
         </div>
 
         <div className="col-1 bg-white rounded-xl px-6 py-2 flex items-center">
-          <Image
-              src="/worldcoin.svg"
-              alt="Worldcoin.org"
-              width={256}
-              height={100}
-            />
+          <Image src="/worldcoin.svg" alt="Worldcoin.org" width={256} height={100} />
         </div>
-
       </div>
-
 
       <footer className="container text-center py-10 px-10 mt-10">
         <button
@@ -519,10 +521,16 @@ const Home: NextPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="inline" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              className="inline"
+              viewBox="0 0 16 16"
+            >
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
             </svg>
-
           </a>
         </p>
         <br />
